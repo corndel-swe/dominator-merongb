@@ -9,9 +9,20 @@
  * @param {number} num The number to be checked.
  * @returns {string} 'fizz', 'buzz', 'fizzbuzz' or ''
  */
-export function fizzBuzz(/* TODO: accept `num` as a parameter */) {
+export function fizzBuzz(num) {
+  let string = "";
+
   // TODO: return 'fizz' if num is divisible by 3
+  if ((num % 5 === 0) & (num % 3 === 0)) {
+    string = "fizzbuzz";
+  } else if (num % 5 === 0) {
+    string = "buzz";
+  } else if (num % 3 === 0) {
+    string = "fizz";
+  }
   // TODO: return 'buzz' if num is divisible by 5
   // TODO: return 'fizzbuzz' if num is divisible by both 3 and 5
   // TODO: return an empty string if num is not divisible by 3 or 5
+
+  return string;
 }
