@@ -8,20 +8,23 @@
  */
 export function main() {
   // TODO: Call the functions in the correct order
+  `${meFirst}, ${meMiddle}, ${meLast}`;
   // TODO: Return the product of the three returned values
+
+  return meFirst() * meMiddle() * meLast();
 }
 
 function meFirst() {
-  console.log('first!')
-  return 17
+  console.log("first!");
+  return 17;
 }
 
 function meMiddle() {
-  console.log('middle!')
-  return 19
+  console.log("middle!");
+  return 19;
 }
 
 function meLast() {
-  console.log('last!')
-  return 23
+  console.log("last!");
+  return 23;
 }

@@ -11,9 +11,17 @@
  * @returns {string} The tax band.
  */
 export function taxBand(income) {
-  let taxBand = null
+  let taxBand;
 
   // TODO: Use if statements to update taxBand with the correct string
 
-  return taxBand
+  if (income >= 50000) {
+    taxBand = "high";
+  } else if (income >= 20000 && income < 50000) {
+    taxBand = "medium";
+  } else {
+    taxBand = "low";
+  }
+
+  return taxBand;
 }
